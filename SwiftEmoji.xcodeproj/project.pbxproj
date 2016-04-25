@@ -38,6 +38,8 @@
 		626892C11CCEA37000F3F6AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62C269F11CCEA4FD00C9EC1D /* Emoji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 		62C269F71CCEB71800C9EC1D /* EmojiData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiData.swift; sourceTree = "<group>"; };
+		62C269F91CCEDE6900C9EC1D /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		62C269FA1CCEDE6900C9EC1D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +73,11 @@
 			children = (
 				62C269F01CCEA4D100C9EC1D /* Sources */,
 				626892AC1CCE9C6F00F3F6AD /* Tests */,
-				626892A01CCE9C6F00F3F6AD /* SwiftEmoji-OSX */,
 				626892BE1CCEA37000F3F6AD /* SwiftEmoji-iOS */,
+				626892A01CCE9C6F00F3F6AD /* SwiftEmoji-OSX */,
 				6268929F1CCE9C6F00F3F6AD /* Products */,
+				62C269F91CCEDE6900C9EC1D /* LICENSE.txt */,
+				62C269FA1CCEDE6900C9EC1D /* README.md */,
 			);
 			sourceTree = "<group>";
 		};

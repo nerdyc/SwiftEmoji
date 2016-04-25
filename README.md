@@ -8,6 +8,7 @@
 * ZWJ Sequences (e.g. 💑)
 * Combining sequences (e.g. 0️⃣)
 * Flag sequences (e.g 🇨🇦)
+* Combining marks (e.g 👨‍👩‍👧‍👦⃠)
 
 All emoji are derived directly from the standard unicode data files, using an automated script.
 
