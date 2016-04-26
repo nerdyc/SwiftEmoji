@@ -14,6 +14,7 @@
 		62C269F31CCEA4FD00C9EC1D /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C269F11CCEA4FD00C9EC1D /* Emoji.swift */; };
 		62C269F51CCEA50100C9EC1D /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C269F11CCEA4FD00C9EC1D /* Emoji.swift */; };
 		62C269F81CCEB71800C9EC1D /* EmojiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C269F71CCEB71800C9EC1D /* EmojiData.swift */; };
+		62C269FB1CCEE8C600C9EC1D /* EmojiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C269F71CCEB71800C9EC1D /* EmojiData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -290,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62C269FB1CCEE8C600C9EC1D /* EmojiData.swift in Sources */,
 				62C269F51CCEA50100C9EC1D /* Emoji.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,6 +408,7 @@
 				INFOPLIST_FILE = "SwiftEmoji-OSX/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nerdyc.SwiftEmoji;
 				PRODUCT_NAME = SwiftEmoji;
 				SKIP_INSTALL = YES;
@@ -426,6 +429,7 @@
 				INFOPLIST_FILE = "SwiftEmoji-OSX/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nerdyc.SwiftEmoji;
 				PRODUCT_NAME = SwiftEmoji;
 				SKIP_INSTALL = YES;
@@ -464,7 +468,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "SwiftEmoji-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nerdyc.SwiftEmoji-iOS";
 				PRODUCT_NAME = SwiftEmoji;
@@ -484,7 +488,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "SwiftEmoji-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nerdyc.SwiftEmoji-iOS";
 				PRODUCT_NAME = SwiftEmoji;
