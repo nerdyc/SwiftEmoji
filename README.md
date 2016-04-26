@@ -17,7 +17,10 @@ All emoji are derived directly from the standard unicode data files, using an au
 The `Emoji` class exposes a number of useful regular expressions as static variables. They each come
 in compiled (`NSRegularExpression`) and uncompiled (`String`) forms.
 
-The `String` values are useful when composing your own expressions. For example, the default expressions do not create any capture groups, to avoid the performance overhead.
+* `SingleEmojiPattern` and `SingleEmojiRegex` match a single emoji character (grapheme cluster).
+* `MultiEmojiPattern` and `MultiEmojiRegex` match one or more consecutive emoji characters.
+
+The `String` values are useful when composing your own expressions. For example, you could 
 
 Look at the source code in `Emoji.swift` for an example.
 
