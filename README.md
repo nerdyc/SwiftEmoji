@@ -6,9 +6,8 @@
 * Emoji that are variants of other characters (e.g. ⌚️ instead of ⌚︎)
 * Fitzpatrick Modifiers (e.g. skintones 👍🏻👍🏼👍🏽👍🏾👍🏿)
 * ZWJ Sequences (e.g. 💑)
-* Combining sequences (e.g. 0️⃣)
+* Combining sequences and Combining Marks (e.g. 0️⃣)
 * Flag sequences (e.g 🇨🇦)
-* Combining marks (e.g 👨‍👩‍👧‍👦⃠)
 
 All emoji are derived directly from the standard unicode data files, using an automated script.
 
@@ -24,6 +23,10 @@ The `String` values are useful when composing your own expressions. For example,
 
 Look at the source code in `Emoji.swift` for an example.
 
+## Installation
+
+`SwiftEmoji` can be installed via CocoaPods, Carthage, or Swift Package Manager.
+
 ## License
 
-Squeal is released under the MIT License. Details are in the `LICENSE.txt` file in the project.
+SwiftEmoji is released under the MIT License. Details are in the `LICENSE.txt` file in the project.
