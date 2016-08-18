@@ -10,7 +10,7 @@ public final class Emoji : EmojiData {
     ///
     public static var SingleEmojiPattern:String = {
         // The "emoji" group needs to be followed by a special character to be rendered like emoji.
-        let emojiVariants = "(?:(?:\(EmojiPatterns.joinWithSeparator("|")))\\uFE0F)"
+        let emojiVariants = "(?:(?:\(EmojiPatterns.joinWithSeparator("|")))\\uFE0F{0,1})"
         
         // Emoji can be followed by optional combining marks. The standard says only keycaps and
         // backslash are likely to be supported.
