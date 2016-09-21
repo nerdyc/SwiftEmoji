@@ -10,9 +10,9 @@
 ///
 ///   http://www.unicode.org/Public/emoji/2.0/
 ///
-public class EmojiData {
+open class EmojiData {
     
-    public static let EmojiPatterns:[String] = [
+    open static let EmojiPatterns:[String] = [
         "\\u0023",    // [1] (#️)      NUMBER SIGN
         "\\u002A",    // [1] (*)       ASTERISK
         "[\\u0030-\\u0039]",    // [10] (0️..9️)  DIGIT ZERO..DIGIT NINE
@@ -154,7 +154,7 @@ public class EmojiData {
         "\\u3299"     // [1] (㊙️)      CIRCLED IDEOGRAPH SECRET
     ]
 
-    public static let EmojiPresentationPatterns:[String] = [
+    open static let EmojiPresentationPatterns:[String] = [
         "\\U0001F004",    // [1] (🀄️)      MAHJONG TILE RED DRAGON
         "\\U0001F0CF",    // [1] (🃏)       PLAYING CARD BLACK JOKER
         "\\U0001F18E",    // [1] (🆎)       NEGATIVE SQUARED AB
@@ -224,11 +224,11 @@ public class EmojiData {
         "\\u2B55"     // [1] (⭕️)      HEAVY LARGE CIRCLE
     ]
   
-    public static let ModifierPatterns:[String] = [
+    open static let ModifierPatterns:[String] = [
         "[\\U0001F3FB-\\U0001F3FF]"     // [5] (🏻..🏿)    EMOJI MODIFIER FITZPATRICK TYPE-1-2..EMOJI MODIFIER FITZPATRICK TYPE-6
     ]
   
-    public static let ModifierBasePatterns:[String] = [
+    open static let ModifierBasePatterns:[String] = [
         "\\U0001F385",    // [1] (🎅)       FATHER CHRISTMAS
         "[\\U0001F3C3-\\U0001F3C4]",    // [2] (🏃..🏄)    RUNNER..SURFER
         "[\\U0001F3CA-\\U0001F3CB]",    // [2] (🏊..🏋)    SWIMMER..WEIGHT LIFTER
@@ -255,7 +255,7 @@ public class EmojiData {
         "[\\u270A-\\u270D]"     // [4] (✊..✍)    RAISED FIST..WRITING HAND
     ]
     
-    public static let SequencePatterns:[String] = [
+    open static let SequencePatterns:[String] = [
         "\\u0023\\u20E3",    // (#️⃣) keycap number sign
         "\\u002A\\u20E3",    // (*⃣) keycap asterisk
         "\\u0030\\u20E3",    // (0️⃣) keycap digit zero
@@ -847,7 +847,7 @@ public class EmojiData {
         "\\u270D\\U0001F3FF"     // (✍🏿) writing hand type-6
     ]
 
-    public static let ZWJSequencePatterns:[String] = [
+    open static let ZWJSequencePatterns:[String] = [
         "\\U0001F441\\u200D\\U0001F5E8",    // (👁‍🗨) eye, zwj, left speech bubble
         "\\U0001F468\\u200D\\U0001F468\\u200D\\U0001F466",    // (👨‍👨‍👦) man, zwj, man, zwj, boy
         "\\U0001F468\\u200D\\U0001F468\\u200D\\U0001F466\\u200D\\U0001F466",    // (👨‍👨‍👦‍👦) man, zwj, man, zwj, boy, zwj, boy
