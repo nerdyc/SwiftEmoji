@@ -24,14 +24,14 @@ namespace :emoji do
 //
 // DO NOT EDIT. This file was auto-generated from the Unicode data files located at:
 //
-//    http://www.unicode.org/Public/emoji/2.0/
+//    http://www.unicode.org/Public/emoji/3.0/
 //
 // To regenerate it, use the rake tasks in the SwiftEmoji project.
 
 ///
 /// A Swift-ified version of Unicode's Emoji data files, located at:
 ///
-///   http://www.unicode.org/Public/emoji/2.0/
+///   http://www.unicode.org/Public/emoji/3.0/
 ///
 public class EmojiData {
     
