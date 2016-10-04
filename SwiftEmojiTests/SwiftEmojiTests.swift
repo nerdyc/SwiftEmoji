@@ -56,6 +56,11 @@ class SwiftEmojiTests: XCTestCase {
         XCTAssertFalse(Emoji.isPureEmojiString("Nice job!"))
     }
     
+    func test_Emoji30() {
+        XCTAssertTrue(Emoji.isPureEmojiString("🕵🏾"))
+        XCTAssertTrue(Emoji.isPureEmojiString("🤰")) // pregnant woman, unicode 9.0
+    }
+    
 }
 
 // =================================================================================================
