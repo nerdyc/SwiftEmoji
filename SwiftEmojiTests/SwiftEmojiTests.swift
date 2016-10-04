@@ -72,10 +72,10 @@ class SwiftEmojiTests: XCTestCase {
 
 extension NSRegularExpression {
     
-    func extractMatchesInString(string:String) -> [String] {
+    func extractMatchesInString(_ string:String) -> [String] {
         let range = NSRange(location: 0, length: string.utf16.count)
-        return matchesInString(string, options: [], range: range).map() { result in
-            (string as NSString).substringWithRange(result.range)
+        return matches(in: string, options: [], range: range).map() { result in
+            (string as NSString).substring(with: result.range)
         }
     }
     
