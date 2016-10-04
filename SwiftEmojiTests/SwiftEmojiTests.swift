@@ -27,7 +27,7 @@ class SwiftEmojiTests: XCTestCase {
     
     func test_MultiEmojiAndWhitespace() {
         let matches = Emoji.MultiEmojiAndWhitespaceRegex.extractMatchesInString(
-            "simple: 👍 👎🏼😳 flag: 🇨🇦 keycap: 9️⃣0️⃣ sequence 👨‍👩‍👧‍👧 sequence with combining mark: 👨‍👩‍👧‍👦⃠"
+            "simple: 👍 👎🏼😳 flag: 🇨🇦 keycap: 9️⃣0️⃣ no key caps: 90 sequence: 👨‍👩‍👧‍👧 sequence with combining mark: 👨‍👩‍👧‍👦⃠"
         )
         
         // note that whitespace is also included
@@ -54,6 +54,10 @@ class SwiftEmojiTests: XCTestCase {
         
         // TEST: No emoji at all
         XCTAssertFalse(Emoji.isPureEmojiString("Nice job!"))
+        
+        // TEST: Emoji without modifiers
+        XCTAssertFalse(Emoji.isPureEmojiString("#"))
+        XCTAssertFalse(Emoji.isPureEmojiString("0"))
     }
     
     func test_Emoji30() {
