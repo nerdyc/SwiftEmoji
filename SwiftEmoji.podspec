@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = "SwiftEmoji"
-  spec.version = "1.0.2"
+  spec.version = "1.1.0"
   spec.summary = "Emoji regular expressions in Swift."
   spec.homepage = "https://github.com/nerdyc/SwiftEmoji"
   spec.license = { type: 'MIT', file: 'LICENSE.txt' }
