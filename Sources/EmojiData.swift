@@ -10,14 +10,14 @@
 ///
 ///   http://www.unicode.org/Public/emoji/3.0/
 ///
-public class EmojiData {
+open class EmojiData {
     
     ///
     /// Patterns that match characters in the "Emoji" group. Note that characters in this group are
     /// (confusingly) not rendered as Emoji by default. They must be followed by the U+FE0F (variant
     /// selector) character to be rendered as Emoji.
     /// 
-    public static let EmojiPatterns:[String] = [
+    open static let EmojiPatterns:[String] = [
         "\\u0023",    // 1.1  [1] (#)       NUMBER SIGN
         "\\u002A",    // 1.1  [1] (*)       ASTERISK
         "[\\u0030-\\u0039]",    // 1.1 [10] (0..9)    DIGIT ZERO..DIGIT NINE
@@ -233,7 +233,7 @@ public class EmojiData {
     /// Patterns that match characters in the "Emoji Presentation" group. These characters are
     /// rendered as Emoji by default, and do not need a variant selector, unlike `EmojiPatterns`.
     ///
-    public static let EmojiPresentationPatterns:[String] = [
+    open static let EmojiPresentationPatterns:[String] = [
         "\\U0001F004",    // 5.1  [1] (🀄)       MAHJONG TILE RED DRAGON
         "\\U0001F0CF",    // 6.0  [1] (🃏)       PLAYING CARD BLACK JOKER
         "\\U0001F18E",    // 6.0  [1] (🆎)       NEGATIVE SQUARED AB
@@ -353,7 +353,7 @@ public class EmojiData {
     /// Patterns that match "Emoji_Modifier_Base" characters, which are those that can be modified
     /// by "Emoji_Modifier" (skintone) characters.
     ///
-    public static let ModifierBasePatterns:[String] = [
+    open static let ModifierBasePatterns:[String] = [
         "\\U0001F385",    // 6.0  [1] (🎅)       FATHER CHRISTMAS
         "[\\U0001F3C3-\\U0001F3C4]",    // 6.0  [2] (🏃..🏄)    RUNNER..SURFER
         "\\U0001F3CA",    // 6.0  [1] (🏊)       SWIMMER
@@ -392,7 +392,7 @@ public class EmojiData {
     /// Patterns that match "Emoji_Modifier" characters (Skin Tones, aka. Fitzpatrick Modifiers).
     /// These modifiers follow the characters in the "Emoji_Modifier_Base" group.
     ///
-    public static let ModifierPatterns:[String] = [
+    open static let ModifierPatterns:[String] = [
         "[\\U0001F3FB-\\U0001F3FF]"     // 8.0  [5] (🏻..🏿)    EMOJI MODIFIER FITZPATRICK TYPE-1-2..EMOJI MODIFIER FITZPATRICK TYPE-6
     ]
     
@@ -401,7 +401,7 @@ public class EmojiData {
     /// variants, but not Zero-Width-Joiner (ZWJ) sequences used for "family" characters like
     /// "👨‍👩‍👧‍👧".
     ///
-    public static let SequencePatterns:[String] = [
+    open static let SequencePatterns:[String] = [
         "\\u0023\\uFE0F\\u20E3",    // 3.0  [1] (#️⃣)      Keycap NUMBER SIGN
         "\\u002A\\uFE0F\\u20E3",    // 3.0  [1] (*️⃣)      Keycap ASTERISK
         "\\u0030\\uFE0F\\u20E3",    // 3.0  [1] (0️⃣)      Keycap DIGIT ZERO
@@ -1092,7 +1092,7 @@ public class EmojiData {
     /// Patterns that match Zero-Width-Joiner (ZWJ) sequences used for "family" characters like
     /// "👨‍👩‍👧‍👧".
     ///
-    public static let ZWJSequencePatterns:[String] = [
+    open static let ZWJSequencePatterns:[String] = [
         "\\U0001F441\\u200D\\U0001F5E8",    // 7.0  [1] (👁‍🗨)      EYE, LEFT SPEECH BUBBLE
         "\\U0001F468\\u200D\\U0001F468\\u200D\\U0001F466",    // 6.0  [1] (👨‍👨‍👦)     Family: MAN, MAN, BOY
         "\\U0001F468\\u200D\\U0001F468\\u200D\\U0001F466\\u200D\\U0001F466",    // 6.0  [1] (👨‍👨‍👦‍👦)    Family: MAN, MAN, BOY, BOY
